@@ -5,6 +5,6 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('OnBoarding Screen')));
+    return const Scaffold(body: Center(child: Text('OnBoarding Screen Test')));
   }
 }
