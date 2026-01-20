@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DocLogoAndName extends StatelessWidget {
@@ -8,9 +9,9 @@ class DocLogoAndName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SvgPicture.asset(
-        'assets/Frame 1000005357.svg',
-        height: 50,
-        width: 50,
+        'assets/svgs/docdoc.svg',
+        height: 38.h,
+        width: 141.w,
       ),
     );
   }
