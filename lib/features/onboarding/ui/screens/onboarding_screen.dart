@@ -11,9 +11,9 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
+    return Scaffold(
+      body: SafeArea(
+        child: SingleChildScrollView(
           physics: const NeverScrollableScrollPhysics(),
           child: Padding(
             padding: EdgeInsets.only(top: 30.h, bottom: 30.h),
