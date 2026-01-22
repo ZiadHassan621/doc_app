@@ -1,3 +1,5 @@
+import 'package:doc_app/core/Helpers/extensions.dart';
+import 'package:doc_app/core/Routing/routes.dart';
 import 'package:doc_app/core/Theming/colors.dart';
 import 'package:doc_app/core/Theming/textstyles.dart';
 import 'package:flutter/material.dart';
@@ -8,17 +10,20 @@ class OnboardingGetstartedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 311.w,
-      height: 52.h,
-      decoration: BoxDecoration(
-        color: ColorsManager.mainBlue,
-        borderRadius: BorderRadius.circular(16.r),
-      ),
-      child: Center(
-        child: Text(
-          "Get Started",
-          style: TextStyles.size16w600.copyWith(color: ColorsManager.white),
+    return GestureDetector(
+      onTap: () => context.pushNamed(Routes.loginscreen),
+      child: Container(
+        width: 311.w,
+        height: 52.h,
+        decoration: BoxDecoration(
+          color: ColorsManager.mainBlue,
+          borderRadius: BorderRadius.circular(16.r),
+        ),
+        child: Center(
+          child: Text(
+            "Get Started",
+            style: TextStyles.size16w600.copyWith(color: ColorsManager.white),
+          ),
         ),
       ),
     );
